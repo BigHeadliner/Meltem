@@ -1,0 +1,151 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';  
+@import 'libs';  
+@import 'global';
+
+
+
+.header{   
+     
+   &__inner{ 
+     display: flex; 
+     justify-content: space-between; 
+     align-items: center;
+   }
+     
+    .menu {
+
+        &__btn {
+            position: relative;
+            width: 50px;
+            height: 40px;
+            border: none;
+            padding: 0;
+            background-color: transparent;
+            transition: all 0.25s;
+            display: none; 
+    
+            .row-top,
+            .row-middle,
+            .row-bottom {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 45px;
+                height: 3px;
+                background: #001E41;
+                transform: rotate(0);
+                transition: all 0.5s;
+            }
+    
+            .row-middle {
+                transform: translateY(16px);
+            }
+    
+            .row-bottom {
+                transform: translateY(33px);
+            }
+    
+        }
+    
+        &__btn.menu__btn--open {
+    
+            .row-top {
+                transform: rotate(45deg) translateY(10px) translateX(13px);
+            }
+    
+            .row-middle {
+                display: none;
+            }
+    
+            .row-bottom {
+                transform: rotate(-45deg) translateY(13px) translateX(-10px);
+            }
+        }
+    
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+    
+        &__item+.menu__item {
+            margin-left: 40px;
+        }
+    
+        &__link {
+            @extend %roboto-400;
+            color: #333;
+            font-size: 16px;
+        }
+    }    
+
+    &__contact{ 
+       max-width: 398px; 
+       width: 100%; 
+       display: flex;
+       justify-content: space-between;
+       align-items:center;
+    }
+     
+     
+   &__contact-phone{ 
+       @extend %roboto-700;  
+       font-size: 16px; 
+       color: #333;
+   } 
+    
+   &__contact-btn{ 
+     @extend %roboto-500;  
+     font-size: 16px;
+     color: #FFF;  
+     padding: 13px 29px; 
+     background-color:#859BA6; 
+     border-radius: 5px;
+   }  
+
+   &__buttons{ 
+    width: 53px; 
+    display: flex; 
+    justify-content: space-between;
+   }  
+
+   &__button{ 
+     border-radius: 3px; 
+     padding: 8px 7px; 
+     height: 30px; 
+     background-color: #859BA6; 
+     color:#FFF; 
+     @extend %roboto-700; 
+     font-size: 12px; 
+     border: 1px solid transparent; 
+     display: flex; 
+     justify-content: center; 
+     align-items:center;
+   }  
+     
+  &__button--ru{ 
+    background-color:#FFF; 
+    color: #859BA6; 
+  }
+    
+
+}
+
+ 
+
+   
+   
+
+ 
+  
+ 
+   
+
+ 
+  
+ 
+
+@import 'media'; 
+ 
+ 

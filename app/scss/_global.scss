@@ -16,4 +16,15 @@ body {
     font-style: normal;
     font-size: 20px;
     line-height: 26px;
-}
+} 
+ 
+.white-popup, 
+.mfp-content{ 
+  width: fit-content; 
+  margin: 0 auto;
+} 
+ 
+.mfp-close-btn-in .mfp-close {
+  cursor: default;
+  color:transparent;
+} 

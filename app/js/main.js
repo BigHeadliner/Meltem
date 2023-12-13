@@ -1,6 +1,7 @@
 $(function () {   
+      
      
-    
+  
  
     function setProgress(index) {
         const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
@@ -28,36 +29,24 @@ $(function () {
       });  
       
       setProgress(0); 
+        
        
-      document.addEventListener('DOMContentLoaded', function () {
-        var openPopupBtn = document.getElementById('open-popup-btn');
-        var closePopupBtn = document.getElementById('close-popup-btn');
-        var myPopup = document.getElementById('my-popup');
-    
-        openPopupBtn.addEventListener('click', function () {
-            myPopup.style.display = 'block';
+      $('#open-popup').on('click', function() {
+        $.magnificPopup.open({
+            items: {
+                src: '#popup',
+                type: 'inline'
+            },
+            closeOnBgClick: true // дозволяє закривати попап при кліку на оверлей
         });
-    
-        closePopupBtn.addEventListener('click', function () {
-            myPopup.style.display = 'none';
-        });
-    
-        window.addEventListener('click', function (event) {
-            if (event.target === myPopup) {
-                myPopup.style.display = 'none';
-            }
-        });
-    });     
-     
-       // Ініціалізація попапу за допомогою ідентифікатора
-       $('#open-popup').on('click', function() {
-        $('#popup').magnificPopup({
-            type: 'inline',
-            midClick: true // дозволяє відкривати popup по кліку на середню кнопку миші
-        }).magnificPopup('open');
     });
-    
-    
+
+    // Додано обробник подій для кнопки закриття попапу
+    $('#popup').on('click', '#close-popup', function() {
+        $.magnificPopup.close();
+    });
+   
+     
   });
 
 

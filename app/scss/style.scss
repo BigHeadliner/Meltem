@@ -103,7 +103,11 @@
      padding: 13px 29px; 
      background-color:#859BA6; 
      border-radius: 5px;
-   }  
+   }   
+    
+   &__contact-btn--spare{ 
+    display: none;
+   }
 
    &__buttons{ 
     width: 53px; 

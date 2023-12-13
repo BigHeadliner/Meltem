@@ -37,7 +37,9 @@
         display: flex; 
         flex-direction: column; 
         margin: 0 auto; 
-        margin-top: 20px;
+        margin-top: 20px; 
+        width: 135px; 
+        border: 1px solid transparent;
     }  
      
     .header__contact-phone{ 
@@ -45,7 +47,10 @@
     } 
      
     .header__buttons{ 
-        margin-bottom: 40px;
+        width: 71px;  
+        border: 1px solid transparent;   
+        margin: 0 auto 40px;
+
     }
      
     .header__contact-btn{  
@@ -159,7 +164,7 @@
     } 
      
     .main__slide{ 
-        border: 1px solid fuchsia;
+        border: 1px solid transparent;
     } 
      
     .main__slide-text {
@@ -231,6 +236,415 @@
     .main__inner {
         padding-top: 35px;
     }
+} 
+ 
+@media (max-width: 750px){    
+     
+    // main
+     
+    .main__slide {
+        display: flex;
+        padding-left: 115px;
+    } 
+     
+    .main__slide-img{ 
+        margin-bottom: 15px;
+    } 
+     
+    .main__inner {
+        padding-top: 15px;
+    }
 
-}
+} 
+ 
+@media (max-width: 684px){   
+     
+    // main
+
+    .main__slide {
+        padding-left: 75px; 
+      } 
+       
+      .main__slide-img {
+        margin-right: 0px;
+     }
+ } 
+  
+ @media (max-width: 620px){   
+     
+    // main
+
+    .main__slide {
+        padding-left: 35px; 
+      } 
+       
+      .main__slide-img {
+        margin-right: 0px;
+     } 
+      
+     .main__inner {
+        padding-top: 5px;
+    } 
+     
+    .main__slider {
+        margin-bottom: 28px;
+    } 
+     
+    .main__slide-title {
+        font-size: 50px;
+        color: #000;
+        margin-bottom: 23px;
+    }
+ }  
+  
+ @media (max-width: 575px){      
+     
+    // popup
+     
+    .popup__message-container {
+        width: 295px;
+        height: 295px;
+        padding: 30px 25px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    } 
+     
+    .popup__message-container-img {
+        margin: 0 auto 14px;
+        width: 67px;
+        height: 67px;
+    } 
+     
+    .popup__message-container-title {
+        font-size: 36px;
+        line-height: 37px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+     
+    .popup__message-container {
+        width: 295px;
+        height: 265px;
+        padding: 30px 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+ }
+  
+ @media (max-width: 555px){      
+     
+     // main
+     
+    .main__slide-img {
+        width: 410px;
+        height: 270px; 
+    }
+
+ } 
+  
+ @media (max-width: 477px){     
+     
+     // popup
+
+    .popup__form-wrapper {
+        padding: 19px;
+        max-width: 350px;
+        height: 361px;
+        margin: 0 auto;
+        position: relative;
+    } 
+     
+    .popup__close-btn {
+        position: absolute;
+        top: 7px;
+        right: 15px;
+    }
+
+ } 
+  
+ @media (max-width: 455px){   
+     
+    // main
+     
+    .main__slide {
+        padding-left: 14px;
+    } 
+
+    .main__slide-content {
+        padding-top: 34px;
+        margin: 0 15px 30px 0;
+    } 
+     
+    .main__slide-img {
+        width: 350px;
+        height: 250px;
+    }
+
+ } 
+  
+ @media (max-width: 435px){    
+     
+    // header
+      
+     .header__contact-btn--spare {
+        font-size: 12px;
+        width: 110px;
+        height: 48px;
+        padding: 8px 19px;
+        display: flex;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+ } 
+  
+ @media (max-width: 405px){   
+     
+    // popup
+     
+    .popup__title {
+        font-size: 21px;
+        margin-bottom: 9px;
+    } 
+     
+    .popup__subtitle {
+        font-size: 15px;
+        margin-bottom: 15px;
+    } 
+     
+    .popup__form-wrapper {
+        padding: 19px;
+        max-width: 317px;
+        height: 361px;
+        margin: 0 auto;
+    }
+
+ } 
+  
+ @media (max-width: 390px){   
+     
+    // header
+      
+    .header__logo-img{ 
+        width: 91px; 
+        height: 18px;
+    } 
+     
+    .header__contact-btn--spare{ 
+        width: 100px; 
+        height: 30px;
+    }  
+
+    .header .menu__btn {
+        margin-left: 27px; 
+        border: 1px solid transparent;
+    } 
+
+    .header .menu__btn .row-top,  
+    .header .menu__btn .row-bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background: #001e41;
+    } 
+     
+    .header .menu__btn {
+        position: relative;
+        width: 33px;
+        height: 40px; 
+    } 
+     
+    .main__slide-img {
+        width: 280px;
+        height: 207px;
+    } 
+     
+    .main__slide-content-second {
+        margin: 0 0 15px 0;
+    } 
+     
+    .main__slide-second-suptitle {
+        font-size: 15px;
+        line-height: 14px;
+    }
+
+ } 
+  
+ @media (max-width: 350px){   
+     
+    // popup
+     
+    .popup__form-wrapper {
+       padding: 160px 15px 180px;
+        max-width: 320px;
+        height: 361px;
+        margin: 0 auto; 
+        height: 594px;
+    } 
+     
+    .mfp-close {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 15px;
+        top: 15px; 
+    } 
+
+    .popup__title {
+        font-size: 28px;  
+        margin-bottom: 15px;
+    } 
+     
+    .popup__subtitle {
+        font-size: 13px;
+        margin-bottom: 25px;
+    } 
+     
+    .popup__input {
+        width: 100%;
+        height: 35px;
+        padding: 9px 15px;
+        border-radius: 5px;
+        margin-bottom: 10px; 
+        border: 1px solid #333;
+    } 
+     
+    .flag-icon-ua {
+        position: absolute;
+        left: 9px;
+        top: 7px;
+    } 
+     
+    .popup__btn {
+        width: 290px;
+        height: 35px;
+        font-size: 12px;
+        border-radius: 5px;
+        background-color: #859ba6;
+        color: #fff;
+        text-align: center;
+        border: 1px solid #333;
+        margin-bottom: 10px;
+    } 
+     
+    .popup__text {
+        font-size: 10px;
+        line-height: 15px;
+    } 
+     
+    .popup__message-container{ 
+        width: 209px; 
+        height: 257px; 
+        padding: 40px 47px;
+    } 
+     
+    .popup__message-container-img { 
+        width: 33px; 
+        height: 33px;  
+        margin-bottom: 23px;
+    } 
+     
+    .popup__message-container-title{ 
+        font-size: 23px; 
+        line-height: 31px; 
+        margin-bottom: 15px; 
+    } 
+     
+    .popup__message-container-text { 
+        font-size: 13px; 
+        line-height: 19px;
+    }  
+
+    // main  
+
+    .main__slide-title {
+        font-size: 43px; 
+    }
+
+ } 
+  
+ @media (max-width: 335px){     
+     
+    // header
+     
+    .header__inner{ 
+        padding: 15px 0;
+    } 
+     
+    .header .menu__btn {
+        margin-left: 15px; 
+    }  
+     
+    // main
+     
+    .main__slide-content {
+        padding-top: 70px;
+        margin: 0 15px 30px 0;
+    } 
+     
+    .main__slide-title {
+        font-size: 35px;  
+        margin-bottom: 25px;
+    } 
+     
+    .main__slide-text {
+        font-size: 13px; 
+        line-height: 20px; 
+        margin-bottom: 20px;
+    } 
+     
+    .main__slide-btn { 
+        width: 100px; 
+        height: 35px;
+        font-size: 16px;
+        color: #fff;
+        padding: 12px 22px;
+        background-color: #859ba6;
+        border-radius: 5px; 
+        margin-bottom: 27px;
+    } 
+     
+    .main__slide-img {
+        width: 207px;
+        height: 133px; 
+        margin-bottom: 15px;
+    } 
+     
+    .main__slide-second-suptitle {
+        font-size: 15px;  
+        max-width: 155px; 
+        line-height: 23px; 
+        margin-left: auto;
+    } 
+     
+    .main__slide-content-second {
+        margin: 0 0 0 auto;
+    } 
+     
+    .main__slide-second-title {
+        display: none;
+    } 
+     
+    .main__slide-second-btn {
+       display: none;
+    } 
+     
+    .main__slide {
+        padding-left: 15px;
+    } 
+     
+    .main__slider {
+        margin-bottom: 15px;
+    }
+       
+
+ } 
+
+
  

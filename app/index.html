@@ -48,7 +48,7 @@
                      
                     <div class="header__contact"> 
                         <a class="header__contact-phone" href="0800000000" >0 (800) 00-00-00</a> 
-                        <a class="header__contact-btn" href="#">Зв’язатись</a>     
+                        <a class="header__contact-btn" id="open-popup" href="#">Зв’язатись</a>     
                         <div class="header__buttons"> 
                             <button class="header__button header__button--ua"> 
                                 UA
@@ -64,12 +64,31 @@
             </nav>   
              
           
+        </div>  
+         
+        <div id="popup" class="white-popup mfp-hide">
+            <div class="popup__form-wrapper">
+                <h2 class="popup__title">Залишайте заявку</h2> 
+                <p class="popup__subtitle">Ми зв’яжемося з вами найближчим часом.</p>
+                <form class="popup__form" id="my-form">
+                    <!-- Ваші поля форми тут -->
+                    <input class="popup__input" type="text" name="name" placeholder="Ваше ім’я*">
+                    <input class="popup__input" type="tel" name="phone" placeholder="Ваш телефон" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    <button class="popup__btn" type="submit">Відправити</button> 
+                    <p class="popup__text"> 
+                      Натискаючи кнопку “Надіслати”, ви погоджуєтесь з  
+                      <a class="popup__link" href="#" >Правилами обробки персональних даних.</a>
+                    </p>
+                </form> 
+                </div>
         </div> 
 
-      </div>    
+      </div>     
      
-        
-    </header> 
+    </header>  
+     
+
+
     <section class="main"> 
         <div class="container"> 
             <div class="main__inner">  

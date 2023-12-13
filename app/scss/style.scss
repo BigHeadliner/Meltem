@@ -307,7 +307,21 @@
     padding: 20px 14px; 
     border-radius: 5px; 
     margin-bottom: 15px;
-   } 
+   }  
+    
+   &__input-wrapper {
+    position: relative;
+   }
+
+    .flag-icon {
+      position: absolute;
+      left: 0;
+      top: -25px;
+      width: 25px; 
+      height: 17px; 
+      background-size: cover;
+     }  
+      
 
    &__btn{  
      width: 100%; 
@@ -328,10 +342,40 @@
   &__link{ 
     color:#333; 
     text-decoration: underline;
+  }  
+   
+  &__message-container{ 
+     width: 378px; 
+     height: 378px; 
+     background-color: #FFF; 
+     padding: 60px 80px; 
+     text-align: center; 
+     display: flex; 
+     flex-direction: column;
   } 
    
-  
+  &__message-container-img{ 
+     margin: 0 auto 30px; 
+     width: 67px; 
+     height: 67px;
+  } 
    
+  &__message-container-title{ 
+    @extend  %roboto-500; 
+     font-size: 40px;  
+     line-height: 52px; 
+     color:#333; 
+     margin-bottom: 20px;
+  } 
+   
+  &__message-container-text{ 
+    @extend  %roboto-400; 
+    line-height: 24px; 
+    color:#333; 
+    font-size: 16px;
+  }
+   
+  
 }
 
  

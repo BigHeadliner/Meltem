@@ -27,4 +27,15 @@ body {
 .mfp-close-btn-in .mfp-close {
   cursor: default;
   color:transparent;
-} 
+}  
+ 
+.flag-icon-ua {
+  background-image: url(../images/main/ua.svg); 
+  position: absolute;
+  left: 9px;
+  top: 12px;
+ } 
+  
+ #popup .phone-input {
+  padding-left: 40px; /* Змініть значення за потреби */ 
+ }

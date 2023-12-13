@@ -30,22 +30,7 @@ $(function () {
       
       setProgress(0); 
         
-       
-    //   $('#open-popup').on('click', function() {
-    //     $.magnificPopup.open({
-    //         items: {
-    //             src: '#popup',
-    //             type: 'inline'
-    //         },
-    //         closeOnBgClick: true // дозволяє закривати попап при кліку на оверлей
-    //     });
-    // });
 
-    // // Додано обробник подій для кнопки закриття попапу
-    // $('#popup').on('click', '#close-popup', function() {
-    //     $.magnificPopup.close();
-    // }); 
-     
     // Новий код для поапу 
      
   

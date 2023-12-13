@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "flag-icon-css": "^4.1.7",
+    "inputmask": "^5.0.8",
     "magnific-popup": "^1.1.0",
     "save-dev": "^0.0.1-security"
   }
